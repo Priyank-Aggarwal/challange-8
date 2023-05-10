@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment-8</title>
+  </head>
+  <body>
+    <div class="container">
+    <form name="myForm" onsubmit="validateForm()">
+        <div><h2 style="color: darkcyan;"><center>Validation Form</center></h2></div>
+      <div class="name">
+        <fieldset>
+          <legend>NAME &#129333;</legend>
+          <div class="first_name">
+            <p>First Name :<small>*</small></p>
+            <input type="text" name="first_name" required>
+          </div>
+          <div id="nameError"></div>
+          <div class="last_name">
+            <p>Last Name :<small>*</small></p>
+            <input type="text" name="lastName" required>
+          </div>
+          <div id="nameError"></div>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Contact Details &#128224;</legend>
+          <div class="phone_number">
+            <p>Phone Number :<small>*</small></p>
+            <input type="number" pattern="{0-9}[10]" name="phone" required>
+          </div>
+          <span id="phoneError"></span>
+
+        </fieldset>
+      
+        <fieldset>
+          <legend>Email Address</legend>
+          <div class="email">
+            <p>Email :<small>*</small></p>
+            <input type="email" name="email" required>
+          </div>
+          <span id="emailError"></span>
+
+          <div class="password">
+            <p>Password :<small>*</small></p>
+            <input type="password" name="password" required>
+          </div>
+          <div id="passwordError"></div>
+
+        </fieldset>
+        <fieldset class="field_agree">
+            <div class="agree">
+                <p><input type="checkbox" name="terms" required>&nbsp; I agree to the given Terms & Condition </p>
+            </div>
+            <span id="termsError"></span>
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>
+        
+    </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

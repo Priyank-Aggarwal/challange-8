@@ -1,0 +1,53 @@
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+    height: 100vh;
+    
+    gap: 20px;
+}
+body{
+    background: url("https://i.ytimg.com/vi/DPuxmI0DocM/maxresdefault.jpg");
+}
+form{
+    width: 440px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: lightgreen;
+}
+input{
+    background-color: white;
+    border: none;
+}
+legend{
+    font-weight: bold;
+    font-size: large;
+}
+fieldset{
+    width: 400px;
+    box-sizing: border-box;
+    padding: 15px;
+    background: linear-gradient(50deg,rgb(165, 39, 39),rgb(53, 53, 170),rgb(158, 158, 63));
+}
+.first_name,.last_name,.phone_number,.email,.password,.agree{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+.field_agree{
+    box-sizing: border-box;
+    
+}
+#submit{
+    width: 360px;
+    background-color: darkturquoise ;
+}
+#submit:hover{
+    background-color: rgb(133, 230, 231);
+}
